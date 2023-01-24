@@ -312,6 +312,10 @@ section {
     animation-name: slideInleft;
 }
 
+.hero__avatar img{
+    width: 100%;
+}
+
 .hero__item.right {
     animation-duration: 1s;
     animation-name: slideInRight;
@@ -478,6 +482,12 @@ section {
     .portfolio-filters .grid__item {
         max-width: 25%;
     }
+    .modal__content {
+        padding: 3rem;
+    }
+    .modal .grid__item {
+        max-width: 50%;
+    }
 }
 
 
@@ -588,7 +598,8 @@ footer .grid {
 }
 
 .footer__socials a {
-    /*color ne fonctionne pas, gérée avec fill dans footer .icon*/
+    /* ==> RAPPEL en ajoutant fill="currentColor dans le path du lien source, le color du CSS s'applique pas besoin de mettre du fill en CSS ! <==*/
+    /* ici color gérée avec fill dans footer .icon*/
     border: 1px solid #F5F5F5;
     border-radius: 50%;
     padding: 1rem;
@@ -601,7 +612,8 @@ footer .grid {
 
 .footer__socials a:hover {
     background: #FFF;
-    /*color ne fonctionne pas, gérée avec fill dans footer .icon:hover*/
+    /* ==> RAPPEL en ajoutant fill="currentColor dans le path du lien source, le color du CSS s'applique pas besoin de mettre du fill en CSS ! <==*/
+    /* ici color gérée avec fill dans footer .icon:hover*/
 }
 
 @media screen and (min-width:750px) {
@@ -691,12 +703,5 @@ footer .grid {
     transition: all 1s ease;
 }
 
-@media screen and (min-width: 750px) {
-    .modal .grid__item {
-        max-width: 50%;
-    }
-    .modal__content {
-        padding: 3rem;
-    }
-}
+                                        /* BLOG */
 
