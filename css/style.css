@@ -705,3 +705,59 @@ footer .grid {
 
                                         /* BLOG */
 
+.blog h1 {
+    text-align: center;
+}
+
+.blog__text {
+    margin-bottom: 3rem;
+}
+
+.article__card {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.article__img {
+    opacity: 0.9;
+}
+
+.article__card:hover img {
+    opacity: 1;
+}
+
+.stretched__link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+/* .sidebar{
+    background: #dd98ef;
+    padding: 2rem;
+    grid-area: sidebar;
+} */
+
+.article {
+    grid-area: article;
+}
+
+@media screen and (min-width:750px) {
+    .d-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 6fr 2fr;
+        grid-column-gap: 2rem;
+        grid-template-areas: 
+        "article sidebar"
+        }
+}
